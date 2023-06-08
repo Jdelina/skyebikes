@@ -1,0 +1,582 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Stalinist+One&display=swap');
+
+  /* ==================bg================ */
+  
+  .bg {
+    animation:slide 10s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(196, 196, 24) 50%, #30abdb 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:initial;
+    animation-duration:10s;
+  }
+  
+  .bg3 {
+    animation-duration:10s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+/*************************************** Navigation Bar ******************************************/
+
+.navbar {
+  top: 0;
+  left: 0;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%; 
+  height: 90px;
+  background: #000;
+  opacity: 0.9;
+}
+
+.navbar .nav-link {
+  font-size: 20px;
+  margin-right: 30px;
+  position: relative;
+  color:#fff
+}
+
+.navbar .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: 0px;
+  height: 2px;
+  background-color:#da250d;
+  box-shadow: 0px 0px 8px #3e1bdd;
+  transition: all 0.6s ease;
+  transform-origin: center;
+}
+
+.navbar .nav-item:hover .nav-link::before {
+  width: 100%;
+}
+
+.navbar .nav-link.active {
+  color:#fff;
+  font-weight: 500;
+}
+
+.navbar .navbar-brand img {
+  max-height: 80px;
+
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-item {
+  color:#fff;
+}
+
+.navbar .navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  
+}
+
+.navbar .toggle-btn {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  z-index: 1100;
+  left: 100px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.navbar .toggle-btn .bar {
+  width: 25px;
+  height: 3px;
+  margin: 7px 0 7px auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #da250d;
+}
+
+.navbar .toggle-btn .bar:nth-child(2) {
+  width: 35px;
+}
+
+.navbar #toggle-menu {
+  display: none;
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(2) {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(1) {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/********************************************* Modal ********************************************/
+
+.modal-dialog .modal-content {
+  background-color: #fff;
+}
+
+.modal-dialog .modal-header,
+.modal-dialog .modal-footer {
+  border: none;
+}
+
+.modal-dialog .modal-body {
+  padding-top: 1px;
+  background-color: black;
+}
+
+.modal-dialog .nav-link {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.modal-dialog .nav-link.active {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.modal-dialog .btn-secondary {
+  color: #fff;
+  background-color: #da250d;
+  border: none;
+}
+
+.modal-dialog .modal-header img {
+  max-height: 200px;
+}
+
+.modal-dialog .nav-link i {
+  margin-right: 10px;
+  color: #da250d;
+}
+  
+  .modal-dialog .search-bar{
+    max-width: 700px;
+    background: #3e1bdd;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    padding:0%;
+  }
+  
+  .modal-dialog .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 14px 10px;
+    font-size: 15px;
+    color: #da250d;
+  }
+  
+  .modal-dialog ::placeholder{
+    color:#928f8f;
+  }
+  
+  .modal-dialog .search-bar button img{
+    width:25px;
+  }
+  
+  .modal dialog .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #da250d;
+    cursor: pointer;
+  }
+  
+  .sky {
+    color: #da250d;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 20px 20px;
+    background:transparent;
+    backdrop-filter: blur(4px) saturate(180%);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .box:hover input{
+    width: 200px;
+  }
+  
+  .box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .box a .fas{
+    color:#da250d;
+    font-size: 18px;
+  }
+
+  
+
+
+/* ----------------------=============Payment form==============---------------------- */
+.card-img-top{
+  height: 10vw;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px 8px 0px 0;     
+}
+
+#tt{
+color: #da250d;
+font-size: 40px;
+}
+
+#pd{
+color: #000;
+}
+
+#cd{
+background: transparent;
+padding: 50px;
+border-radius: 20px;
+backdrop-filter:  blur(5px);
+border: 2px solid rgba(255,255,255,0.5);
+}
+
+.card{
+border:none;
+}
+
+.form-control {
+border-bottom: 2px solid #da250d !important;
+border: none;
+font-weight: 600;
+background: transparent;
+}
+
+.form-control:focus {
+color: #000;
+background-color: transparent;
+border-color: #da250d;
+outline: 0;
+box-shadow: none;
+border-radius: 0px;
+border-bottom: 2px solid #da250d !important;
+}
+
+
+
+.inputbox {
+position: relative;
+margin-bottom: 20px;
+width: 100%
+}
+
+.inputbox span {
+position: absolute;
+top: 7px;
+left: 11px;
+transition: 0.5s
+}
+
+.inputbox i {
+position: absolute;
+top: 13px;
+right: 8px;
+transition: 0.5s;
+color: #da250d
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0
+}
+
+.inputbox input:focus~span {
+transform: translateX(-0px) translateY(-15px);
+font-size: 12px
+}
+
+.inputbox input:valid~span {
+transform: translateX(-0px) translateY(-15px);
+font-size: 12px
+}
+
+.card-blue{
+
+background-color: #da250d;
+border-radius: 20px;
+}
+
+.yellow{
+
+color: #fdcc49; 
+}
+
+.decoration{
+
+text-decoration: none;
+font-size: 14px;
+}
+
+button{
+width: 100%;
+height: 40px;
+border-radius: 40px;
+background: #da250d;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 1em;
+font-weight: 600;
+}
+
+.btn-success:hover {
+color: #000;
+background-color:#3e1bdd;
+border-color: #3e1bdd;
+}
+
+
+.decoration:hover{
+
+text-decoration: none;
+color: #fdcc49; 
+}
+
+
+
+
+/* footer */
+
+.sau {
+  color:#da250d;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.sb {
+  color:#da250d;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.ss {
+  color:#da250d;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.sc {
+  color:#da250d;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sau {
+  text-align: left;
+}
+
+.sp {
+  text-align: left;
+}
+
+.sb {
+  text-align: left;
+}
+
+.pbb {
+  text-align: left;
+}
+
+.prb {
+  text-align: left;
+}
+
+.ppo {
+  text-align: left;
+}
+
+.ss {
+  text-align: left;
+}
+
+.sr {
+  text-align: left;
+}
+.su {
+  text-align: left;
+}
+
+.sc {
+  text-align: left;
+}
+
+.ch {
+  text-align: left;
+}
+
+.ce {
+  text-align: left;
+}
+
+.cp {
+  text-align: left;
+}
+.ccp {
+  text-align: left;
+}
+
+/*====================================== make web mobile friendly =============================*/
+
+@media screen and (max-width:600px) 
+{
+
+ /* navbar */
+
+ .navbar{
+  top: 0;
+  left: 0;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%; 
+  height: 80px;
+  background: #000;
+  opacity: 0.9;
+ }
+
+ .navbar .navbar-brand img {
+  max-height: 50px;
+
+}
+
+.navbar .toggle-btn {
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+  z-index: 1100;
+  left: 150px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+/* modalnavbar */
+
+.modal-dialog .modal-content {
+  background-color: #fff;
+}
+
+.modal-dialog .modal-header,
+.modal-dialog .modal-footer {
+  border: none;
+}
+
+.modal-dialog .modal-body {
+  padding-top: 0px;
+  background-color: black;
+}
+
+.modal-dialog .nav-link {
+  font-size: 18px;
+  margin-bottom: 1px;
+  color:#fff;
+}
+
+.modal-dialog .nav-link.active {
+  font-size: 18px;
+  margin-bottom: 1px;
+  color:#fff;
+}
+
+.modal-dialog .btn-secondary {
+  color: #fff;
+  background-color: #da250d;
+  border: none;
+}
+
+.modal-dialog .modal-header img {
+  max-height: 100px;
+}
+
+.modal-dialog .nav-link i {
+  margin-right: 10px;
+  color: #da250d;
+}
+
+
+/* Go top and SM */
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  bottom: 40px;
+  right: 10px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+
+}

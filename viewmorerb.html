@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skye Bikes</title>
+    <link rel="icon" type="image/x-icon" href="black_cream_icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="styleforviewmorerb.css" />
+    
+
+
+  </head>
+
+  <body>
+    
+<!--================================== Navigation Bar================================================-->
+<nav class="navbar navbar-expand-lg" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="home.html"><img src="Black$cream.jpg" alt="logo"></a>
+      
+<!--================================= Button trigger modal ===============================================-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbar-modal" 
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+
+       <input type="checkbox" name="toggle-menu" id="toggle-menu">
+       <label type="button" class='toggle-btn' for='toggle-menu'>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </label>
+      </button>
+
+<!--================================================== Navigation bar======================================= -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<!-- About Us -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#au"><i class="fas fa-book" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  About Us</span></a>
+          </li>
+<!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#cu"><i class="fa-sharp fa-solid fa-phone" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  Contact Us</span></a>
+          </li>
+<!-- Services -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ser"><i class="fa-solid fa-screwdriver-wrench" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;"> Services </span>
+            </a>
+          </li>
+<!-- Bikes -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fa-solid fa-motorcycle" style="color:#da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  Bikes </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="viewmorebigb.html"><span style="font-family: 'poppins',sans-serif;"> Big Bikes </span> </a></li>
+              <li><a class="dropdown-item" href="viewmorerb.html"><span style="font-family: 'poppins',sans-serif;"> Regular Bikes</span> </a></li>
+                <a class="dropdown-item" href="pre-owned.html"><span style="font-family: 'poppins',sans-serif;"> Pre-Owned </span></a>
+              </li>
+            </ul>
+          </li>
+<!-- Account -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fa-solid fa-user" style="color: #da250d; "></i> <span style="font-family: 'poppins',sans-serif;">  Account</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"> <span style="font-family: 'poppins',sans-serif;">  Login </span> </a></li>
+              <li><a class="dropdown-item" href="sign Up.html"> <span style="font-family: 'poppins',sans-serif;">  Register</span> </a></li>
+              <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+<!-- Search button -->
+          <div class="box">
+            <input type="text" placeholder="quick search">
+            <a href="https://www.motodeal.com.ph/">
+              <i class="fas fa-search"></i> 
+          </div>
+        </form> 
+      </div>
+    </div>
+  </nav>
+
+<!--=========================================== Modal =======================================-->
+<div class="modal fade" data-bs-backdrop="static" id="navbar-modal" tabindex="-1" 
+aria-labelledby="navbar-modalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+<br>
+<br>
+<br>
+<!-- search button -->
+    <div class="modal-header">
+      <img src="Black$cream.jpg" alt="logo">
+    </div>
+   
+    <div class="modal-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <div class="box">
+            <input type="text" placeholder="quick search">
+            <a href="https://www.motodeal.com.ph/">
+              <i class="fas fa-search"></i> 
+          </div>
+
+<!-- About Us -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#au"><i class="fas fa-book" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  About Us</span></a>
+          </li>
+<!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#cu"><i class="fa-sharp fa-solid fa-phone" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  Contact Us</span></a>
+          </li>
+<!-- Services -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ser"><i class="fa-solid fa-screwdriver-wrench" style="color: #da250d;"></i> <span style="font-family: 'poppins',sans-serif;"> Services </span>
+            </a>
+          </li>
+<!-- Bikes -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fa-solid fa-motorcycle" style="color:#da250d;"></i> <span style="font-family: 'poppins',sans-serif;">  Bikes </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="viewmorebigb.html"><span style="font-family: 'poppins',sans-serif;"> Big Bikes </span> </a></li>
+              <li><a class="dropdown-item" href="viewmorerb.html"><span style="font-family: 'poppins',sans-serif;"> Regular Bikes</span> </a></li>
+                <a class="dropdown-item" href="pre-owned.html"><span style="font-family: 'poppins',sans-serif;"> Pre-Owned </span></a>
+              </li>
+            </ul>
+          </li>
+<!-- Account -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fa-solid fa-user" style="color: #da250d; "></i> <span style="font-family: 'poppins',sans-serif;">  Account</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"> <span style="font-family: 'poppins',sans-serif;">  Login </span> </a></li>
+              <li><a class="dropdown-item" href="sign Up.html"> <span style="font-family: 'poppins',sans-serif;">  Register</span> </a></li>
+              <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for="toggle-menu">Close</label></button>
+            </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+<!------------------------------------------------ Regular Bikes List --------------------------------------->
+
+<div class="bg3">
+    <div class="container" id="k" style="margin-top:50px;"> 
+      <h2 class="fancy" id="rb" style="--w: 35vw;--c: #da250d;--b:4px;--g: 40px">Regular Bikes</h2>
+      
+      <div class="row row-cols-1 row-cols-md-2 g-4 gy-3" class="card-image">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="click.jpg" class="card-img-top" alt="Honda Click 125i">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Honda Click 125i | ₱80,900</h5>
+              <p class="card-text">Even a quick glance is enough to know that The All-New CLICK125 is unlike any other. This latest model features a new bold design with a more refined front and body image. Neat decals provide a nice touch and bring the look to life that everyone from the sporty to the stylish will definitely love.</p>
+            </div>
+  
+          <a href="https://www.motodeal.com.ph/motorcycles/honda/click-125" class="card-button"> More Details</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="nmax.jpg" class="card-img-top" alt="Yamaha Nmax">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment2.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Yamaha Nmax | ₱150,000</h5>
+              <p class="card-text">Design with a ‘Prestige and Confidence’ concept in mind, its style is simple but elegant, providing comfort and reliability through a sense of riding superiority. It provides top-tier performance with quick acceleration, excellence handling, and a  lighweight frame that embodies the essence of the MAX family.</p>
+            </div>
+  
+          <a href="https://www.motodeal.com.ph/motorcycles/yamaha/nmax-155" class="card-button"> More Details</a>
+          </div>
+    </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="aerox.jpg" class="card-img-top" alt="Yamaha Aerox 155">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment3.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Yamaha Aerox 155 | ₱119,900</h5>
+              <p class="card-text">The Yamaha Mio Aerox 155 is one of the most powerful AT scooters in the local market today. Price ranges from P112,900 up to P132,900. Depending on which variant you get, the Mio Aerox can be personalized through a wide range of color options such as Black Raven and Race Blu.</p>
+            </div>
+          <a href="https://www.motodeal.com.ph/motorcycles/yamaha/mio-aerox-155" class="card-button"> More Details</a>
+          </div>
+    </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="click160.jpg" class="card-img-top" alt="Honda Click 160">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment4.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Honda Click 160 | P116,900</h5>
+              <p class="card-text">The All-New CLICK160 allows you to stay on track anywhere you go. A powerful, New Generation 157cc, 4-valve, liquid-cooled, eSP+ engine packs quite the punch for a scooter with a max power of 11.3 kW @ 8,5000 rpm and a top torque of 13.8 Nm @ 7,000 rpm. This scooter also runs on a PGM-FI System for much-valued fuel efficiency at 46.7 km/L based on World Motorcycle Test Cycle Method, perfect for daily city driving and weekend road trips.</p>
+            </div>
+          <a href="https://www.motodeal.com.ph/motorcycles/honda/click160" class="card-button"> More Details</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="Raider-R150-Fi_Candy-Matte-Bordeaux-Red_thumbnail.webp" class="card-img-top" alt="Suzuki Raider R150 Fi">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment5.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Suzuki Raider R150 Fi | ₱116,400</h5>
+              <p class="card-text">The Pinnacle of Hyper Underbones – the Raider R150 Fuel Injection is equipped with the technology and benefits of Suzuki Fuel Injection system with sporty styling and improved body & engine components placing itself above the competition. It is more powerful than any previous model in the Raider Breed and in any other 150cc motorcycle in the country.It provides maximum power and performance inherited from Suzuki technologies developed for the MotoGP machine. It is a symbol of Suzuki’s commitment to bring its motorcycles to the pinnacle of fame – worthy to be called superior in its class.</p>
+            </div>
+          <a href="https://www.motodeal.com.ph/motorcycles/suzuki/raider-r150-fi" class="card-button"> More Details</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="honda-pcx160-slant-rear-view-full-image-652107.webp" class="card-img-top" alt="Honda PCX 160">
+            
+            <div class="card-body">
+              <a class="card-action" href="rbpayment6.html"><i class="fa-solid fa-credit-card"></i></a>
+              <h5 class="card-title">Honda PCX 160 | ₱133,900 </h5>
+              <p class="card-text">Bringing elegance and superiority to the next level, PCX160 lets Filipino riders to stand out on the road and ride with pride with its all-new premium and elegant design, improved driving performance with comfortable and spacious riding, and the latest technology and security features.</p>
+            </div>
+        
+          <a href="https://www.motodeal.com.ph/motorcycles/honda/pcx-160" class="card-button"> More Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+<!-- ===================Go Top and SM===================== -->
+
+<a class= "gotopbtn" href="#"><i class="fa-sharp fa-solid fa-circle-up" style="color: #da250d;"></i></a>
+
+<!-- =====================Footer========================== -->
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="sau">About Us</h5>
+        <p class="pbb">
+          <a href="#mi" class="text-white" style="text-decoration: none;"> Mission</a>
+        </p>
+        <p class="prb">
+          <a href="#vi" class="text-white" style="text-decoration: none;"> Vision</a>
+        </p>
+        <p class="ppo">
+          <a href="#hi" class="text-white" style="text-decoration: none;"> History</a>
+        </p>
+
+
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="sb">Bikes</h5>
+        <p class="pbb">
+          <a href="viewmorebigb.html" class="text-white" style="text-decoration: none;"> Big Bikes</a>
+        </p>
+        <p class="prb">
+          <a href="viewmorerb.html" class="text-white" style="text-decoration: none;"> Regular Bikes</a>
+        </p>
+        <p class="ppo">
+          <a href="pre-owned.html" class="text-white" style="text-decoration: none;"> Pre-owned</a>
+        </p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="ss">Services</h5>
+        <p class="su">
+          <a href="#" class="text-white" style="text-decoration: none;"> MNT</a>
+        </p>
+        <p class="sr">
+          <a href="#" class="text-white" style="text-decoration: none" > Repair</a>
+        </p>
+        <p class="su">
+          <a href="#" class="text-white" style="text-decoration: none;"> Upgrades</a>
+        </p>
+
+
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 id="cu" class="sc">Contact</h5>
+        <p class="ch">
+          <i class="fas fa-home mr-3" style="color: #da250d;"></i> Blk 17 Lot 24, Northdale Villas, Naic, Cavite, PH 4110, Philippines 
+        </p>
+        <p class="ce">
+          <i class="fas fa-envelope mr-3" style="color: #da250d;"></i> skyebikes@gmail.com 
+        </p>
+        <p class="cp">
+          <i class="fas fa-phone mr-3" style="color: #da250d;"></i> +03 7669-3813 
+        </p>
+        <p class="ccp">
+          <i class="fa-solid fa-mobile-retro" style="color: #da250d;"></i> +639669388328 
+        </p>
+      </div>
+      
+      <div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright ©2023 All rights reserved by:
+              <a href="#" style="text-decoration: none;">
+            <strong class="text-warning">Skye Bikes</strong>
+              </a></p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-lg text-white"><i class="fa-brands fa-facebook" style="color: #da250d;"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-lg text-white"><i class="fa-brands fa-twitter" style="color: #da250d;"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-lg text-white"><i class="fa-brands fa-instagram" style="color: #da250d;"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-lg text-white"><i class="fa-brands fa-youtube" style="color: #da250d;"></i></a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+ </body>
+ </html>
